@@ -1,0 +1,18 @@
+@import "../../styles/colors.scss";
+@import "../../styles/fonts.scss";
+
+.footer{
+    width: 100%;
+    height: 75px;
+    background-color: $color-fondo-footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .copyright{
+        font-size: 1.5rem;
+    }
+    .texto-footer{
+        font-weight: bold;
+    }
+}

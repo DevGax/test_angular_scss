@@ -1,0 +1,58 @@
+@import "../../styles/colors.scss";
+@import "../../styles/fonts.scss";
+
+.imagen-main{
+    //background-image: url("../../../assets/img/image-main.jpg");
+    background-image: url("../../../assets/img/image-main2.png");
+    height: 600px;
+    max-height: 600px;
+    background-position: center;
+}
+.eslogan-main{
+    position: absolute;
+    z-index: 1;
+    top: 200px;
+    right: 35px;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 2rem;
+    padding: 1.5rem;
+    width: 140px;
+    .text-eslogan{
+        line-height: 35px;
+        font-size: 1.5rem;
+        margin: 0;
+    }
+}
+
+.contenido-principal{
+    width: 100%;
+    height: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    //padding: 1.5rem;
+    background-color: $color-div-prin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .texto-contenido-principal{
+        font-size: 1.4rem;
+        text-align: justify;
+        margin: 0;
+        margin-top: 1rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        border-top-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+    .texto-contenido-principal.color-fondo-parrafo{
+        background-color: $color-fondo-texto;
+        width: 85%;
+    }
+    .imagen-contenido-principal img{
+        margin: 0 auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 250px;
+        
+    }
+}
