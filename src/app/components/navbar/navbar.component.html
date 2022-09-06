@@ -1,29 +1,31 @@
-
-
-<header class="main-header" >
-    <div class="contenedor-logo">
-    <img src="../../../assets/img/logosvg150.svg" class="img-logo" [routerLink]="['/']">
+<header class="main-header" *ngIf="auth.visible">
+  <div class="contenedor-logo">
+    <img
+      src="../../../assets/img/logosvg150.svg"
+      class="img-logo"
+      [routerLink]="['/']"
+    />
   </div>
-    <a class="main-logo" [routerLink]="['/']" >
-      <strong>The Garden Yoga</strong>
-    </a>
-    <nav id="nav" class="main-nav" >
-      <div class="nav-links" >
-        <a class="link-item" [routerLink]="['/']" >Inicio</a>
-        <a class="link-item" [routerLink]="['/clases']" >Clases</a>
-        <a class="link-item" [routerLink]="['/calendario']" >Calendario</a>
-        <a class="link-item" [routerLink]="['/eventos']" >Eventos</a>
-        <div class="link-item form-register-login">
-          <button class="btn-registro">Registro</button>
-          <button class="btn-login">Login</button> 
-        </div>
+  <a class="main-logo" [routerLink]="['/']">
+    <strong>The Garden Yoga</strong>
+  </a>
+  <nav id="nav" class="main-nav">
+    <div class="nav-links">
+      <a class="link-item" [routerLink]="['/']">Inicio</a>
+      <a class="link-item" [routerLink]="['/clases']">Clases</a>
+      <a class="link-item" [routerLink]="['/calendario']">Calendario</a>
+      <a class="link-item" [routerLink]="['/eventos']">Eventos</a>
+      <div class="link-item form-register-login">
+        <button class="btn-registro" [routerLink]="['/registro']">
+          Registro
+        </button>
+        <button class="btn-login" [routerLink]="['/login']">Login</button>
       </div>
-    </nav>
-    <button id="button-menu" class="button-menu" #buttonMenu >
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </header>
-
-
+    </div>
+  </nav>
+  <button id="button-menu" class="button-menu" #buttonMenu>
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</header>

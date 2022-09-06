@@ -1,0 +1,54 @@
+@import '../../styles/colors.scss';
+.register-main{
+    background-image: url('../../../assets/img/img-register.jpg');
+    height: 100vh;
+    background-size: 100% 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .espacio-register{
+        .inicio{
+            width: 90%;
+            cursor: pointer;
+            height: 40px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            border: 2px solid $color-fondo-footer;
+            margin-top: 7.5vh;
+            a{
+                width: 100%;
+                text-align: center;
+                color: $color-fondo-footer;
+                font-size: x-large;
+                text-decoration: none;
+            }
+        }
+        .inicio:hover{
+            background-color: $color-fondo-footer;
+            border-color: white;
+            a{
+                color: white;
+            }
+        }
+        .form-register{
+            background-color: rgba(240, 244,195, 0.5);
+            height: 70vh;
+            margin-top: 7.5vh;
+            width: 90%;
+            border-radius: 20px;
+            //opacity: 0.5;
+            border: 2px solid $color-fondo-footer;
+            display: flex;
+            flex-direction: column;
+            .titulo-registro{
+                height: 40px;
+                width: auto;
+                text-align: center;
+                line-height:150%;
+                background-color: white;
+            }
+        }
+    }
+}

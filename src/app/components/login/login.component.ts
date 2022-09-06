@@ -2,16 +2,16 @@ import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/service/auth/auth.service';
 
 @Component({
-  selector: 'app-calendario',
-  templateUrl: './calendario.component.html',
-  styleUrls: ['./calendario.component.scss']
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.scss']
 })
-export class CalendarioComponent implements OnInit {
+export class LoginComponent implements OnInit {
 
   constructor(private auth : AuthService) { }
 
   ngOnInit(): void {
-    this.auth.show();
+    this.auth.hide();
   }
 
 }
