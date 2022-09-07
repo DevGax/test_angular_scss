@@ -1,4 +1,6 @@
 @import '../../styles/colors.scss';
+@import '../../styles/fonts.scss';
+
 .register-main{
     background-image: url('../../../assets/img/img-register.jpg');
     height: 100vh;
@@ -42,13 +44,27 @@
             border: 2px solid $color-fondo-footer;
             display: flex;
             flex-direction: column;
-            .titulo-registro{
-                height: 40px;
-                width: auto;
-                text-align: center;
-                line-height:150%;
+            .titulo-registro-icons{
+                margin: 10px auto;
+                display: flex;
+                flex-direction: row;
                 background-color: white;
+                justify-content:space-between;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                width: 90%;
+                .titulo-registro{
+                    height: 40px;
+                    width: auto;
+                    text-align: center;
+                    line-height:130%;
+                    background-color: white;
+                    font-family: $third;
+                    font-size: 50px;
+                    margin: 0;
+                }
             }
         }
     }
 }
+

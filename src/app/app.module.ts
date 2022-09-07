@@ -1,6 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+//-- MATERIAL--
+
+import {MatInputModule} from '@angular/material/input';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -11,6 +15,7 @@ import { CalendarioComponent } from './components/calendario/calendario.componen
 import { EventosComponent } from './components/eventos/eventos.component';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
+import { ImplicitReceiver } from '@angular/compiler';
 
 @NgModule({
   declarations: [
@@ -26,7 +31,8 @@ import { LoginComponent } from './components/login/login.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
