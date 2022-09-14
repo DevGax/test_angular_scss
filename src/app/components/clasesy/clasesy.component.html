@@ -1,14 +1,23 @@
 <div class="main-clases">
-    <div class="principal-main-clases">
-        <div class="lista-clases">
-            <mat-selection-list #shoes [multiple]="false">
-                <mat-list-option *ngFor="let shoe of typesOfShoes" [value]="shoe">
-                  {{shoe}}
-                </mat-list-option>
-              </mat-selection-list>
-        </div>
-        <div class="todas-las-clases" (window:scroll)="doSomethingOnWindowsScroll($event)" #pp>
-            <div class="abajo">hola bb</div>
-        </div>
+  <div class="principal-main-clases">
+    <div class="lista-clases" #lista>
+      <ul>
+        <li #kk><a href="#">Test1</a></li>
+        <li><a href="#">Test2</a></li>
+        <li><a href="#">Test3</a></li>
+        <li><a href="#">Test4</a></li>
+        <li><a href="#">Test5</a></li>
+        <li><a href="#">Test6</a></li>
+        <li><a href="#">Test7</a></li>
+        <li><a href="#">Test8</a></li>
+      </ul>
     </div>
+    <div
+      class="todas-las-clases"
+      (window:scroll)="doSomethingOnWindowsScroll($event)"
+      #pp
+    >
+      <div class="abajo">hola bb</div>
+    </div>
+  </div>
 </div>

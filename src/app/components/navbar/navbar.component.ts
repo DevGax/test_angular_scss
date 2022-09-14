@@ -26,6 +26,7 @@ export class NavbarComponent implements OnInit {
       const navbarToggler = this.elementRef.nativeElement.querySelector('.button-menu')
       const navWrapper = this.elementRef.nativeElement.querySelector('.main-nav');
       navbarToggler.addEventListener('click', () => {
+        
         navbarToggler.classList.toggle('close');
         navWrapper.classList.toggle('show');
       });
