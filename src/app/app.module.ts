@@ -4,6 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 //-- MATERIAL--
 
 import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
+import {MatListModule} from '@angular/material/list';
+
+import { BrowserAnimationsModule,NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -32,7 +36,11 @@ import { ImplicitReceiver } from '@angular/compiler';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatInputModule
+    MatInputModule,
+    MatButtonModule,
+    MatListModule,
+    BrowserAnimationsModule,
+    NoopAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

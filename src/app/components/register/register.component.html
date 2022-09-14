@@ -12,11 +12,27 @@
       </div>
       
       <div class="contenido-registro">
-        <form class="example-form">
-          <mat-form-field class="example-full-width" appearance="fill">
+        <form class="form-register-inputs">
+          <mat-form-field class="input-email" appearance="fill">
+            <mat-label>Email</mat-label>
+            <input matInput value="">
+          </mat-form-field>
+          <mat-form-field class="input-user" appearance="fill">
             <mat-label>Nombre de usuario</mat-label>
             <input matInput value="">
           </mat-form-field>
+          <mat-form-field class="input-pass" appearance="fill">
+            <mat-label>Contraseña</mat-label>
+            <input matInput value="">
+          </mat-form-field>
+          <mat-form-field class="input-pass-repeat" appearance="fill">
+            <mat-label>Repetir contraseña</mat-label>
+            <input matInput value="">
+          </mat-form-field>
+          <div class="botones-registro">
+            <button mat-stroked-button color="primary">Primary</button>
+            <button mat-stroked-button color="warn" [routerLink]="['/']">Warn</button>
+          </div>
         </form>
         
       </div>

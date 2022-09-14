@@ -1,1 +1,14 @@
-<p>clasesy works!</p>
+<div class="main-clases">
+    <div class="principal-main-clases">
+        <div class="lista-clases">
+            <mat-selection-list #shoes [multiple]="false">
+                <mat-list-option *ngFor="let shoe of typesOfShoes" [value]="shoe">
+                  {{shoe}}
+                </mat-list-option>
+              </mat-selection-list>
+        </div>
+        <div class="todas-las-clases" (window:scroll)="doSomethingOnWindowsScroll($event)" #pp>
+            <div class="abajo">hola bb</div>
+        </div>
+    </div>
+</div>

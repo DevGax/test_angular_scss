@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/service/auth/auth.service';
-import { NavbarComponent } from '../navbar/navbar.component';
 
 @Component({
   selector: 'app-register',
